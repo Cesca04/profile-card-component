@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --clr-Dark-cyan: hsl(185, 75%, 39%);
+    --clr-Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --clr-Dark-grayish-blue: hsl(227, 10%, 46%);
+    --clr-Dark-gray: hsl(0, 0%, 59%);
+    --clr-white: white;
+
+
+    font-size: 18px;
+
+}
+
+main{
+    background-color:var(--clr-Dark-cyan);
+    width: 100%;
+    min-height: 100vh;
+    display: flex; 
+}
+
+.inner-page{
+    border-radius:20px;
+    width: 30%;
+    height: 70vh;
+    margin: auto;
+    background-color: aqua;
+    box-sizing: content-box;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;   
+}
+
+.upper-page{
+    width: 100%;
+    height: 40%;
+    background-image: url(../images/bg-pattern-card.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: var(--clr-Dark-gray);      
+} 
+
+.lower-page{
+    width: 100%;
+    height: 60%;
+    background-color: var(--clr-white); 
+}
+
+.image{
+    border-radius: 100px;
+    position: absolute;
+    width: 150px;
+    right: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 50px;
+}
+
+.text-part{
+    /* display: flex;
+    flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    margin-top: 25%;
+    font-size: 18px;
+    gap: 20px;
+    font-family: Kumbh Sans; 
+}
+
+.first-text{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+   
+}
+
+.border{
+    border: 0.01px solid gray;
+    margin-top: 30px;
+    border-width: 0.05px;
+}
+
+strong{
+    align-items: center;
+}
+
+.small-font{
+    font-size: 12px;
+}
+
+.second-text{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.second-text .second-texts{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+ 
